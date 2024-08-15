@@ -1,0 +1,10 @@
+.inputCard {
+  display: flex;
+  flex-direction: column;
+  background-color: lightcyan;
+  gap: 5px;
+  .row {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+  }
+}
