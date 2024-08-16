@@ -2,9 +2,18 @@
   display: flex;
   flex-direction: column;
   background-color: lightcyan;
-  gap: 5px;
+  margin: 10px;
+  border-style: solid;
   .row {
     display: grid;
     grid-template-columns: 1fr 3fr;
   }
+}
+.inputCard.summary {
+  .row {
+    grid-template-columns: 1fr;
+  }
+}
+.workplace {
+  margin-top: 10px;
 }

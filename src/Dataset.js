@@ -8,6 +8,7 @@ export const userInfo = {
     github: "",
   },
   label: {
+    objectName: "userInfo",
     header: "Your information",
     firstName: "First name",
     lastName: "Last name",
@@ -23,8 +24,61 @@ export const summary = {
     summary: "Write something about you",
   },
   label: {
+    objectName: "summary",
     header: "Summary",
-    summary: "Summary",
+    summary: " ",
   },
-  visible: true,
+  visible: false,
+};
+export const experience = {
+  data: [
+    {
+      place: "",
+      dates: "",
+      position: "",
+      duties: "",
+    },
+  ],
+  label: {
+    objectName: "experience",
+    header: "Experience",
+    experience: " ",
+    place: "Workplace",
+    dates: "Dates",
+    position: "Position",
+    duties: "Duties",
+    template: {
+      place: "",
+      dates: "",
+      position: "",
+      duties: "",
+    },
+  },
+  visible: false,
+};
+export const education = {
+  data: [
+    {
+      place: "",
+      dates: "",
+      fieldOfStudy: "",
+      duties: "",
+    },
+  ],
+  label: {
+    objectName: "education",
+    header: "Education",
+    experience: " ",
+    place: "Place",
+    dates: "Dates",
+    fieldOfStudy: "Field",
+    duties: "Duties",
+    template: {
+      place: "",
+      dates: "",
+      fieldOfStudy: "",
+      duties: "",
+    },
+  },
+  visible: false,
 };
