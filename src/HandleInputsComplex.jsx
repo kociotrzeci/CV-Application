@@ -50,13 +50,11 @@ function HandleInputsComplex({
                   </div>
                 </div>
               ))}
-              <button onClick={() => removeWorkplace(index)}>
-                REMOVE WORKPLACE
-              </button>
+              <button onClick={() => removeWorkplace(index)}>REMOVE</button>
             </div>
           </div>
         ))}
-      {visible && <button onClick={addWorkplace}>ADD WORKPLACE</button>}
+      {visible && <button onClick={addWorkplace}>ADD</button>}
     </div>
   );
 }

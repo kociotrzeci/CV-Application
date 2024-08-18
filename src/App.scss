@@ -1,3 +1,17 @@
+.App {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  .output {
+    background-color: aquamarine;
+    .userInfo {
+      div {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+      }
+    }
+  }
+}
+
 .inputCard {
   display: flex;
   flex-direction: column;
