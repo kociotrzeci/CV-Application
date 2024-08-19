@@ -69,7 +69,7 @@ export const education = {
   data: [
     {
       place: "Austria",
-      dates: "dummy content",
+      dates: "1955-1970",
       fieldOfStudy: "veri important study",
       duties: "lerning stuff",
     },
@@ -81,7 +81,7 @@ export const education = {
     place: "Place",
     dates: "Dates",
     fieldOfStudy: "Field",
-    duties: "Duties",
+    duties: "Skills",
     template: {
       place: "",
       dates: "",
@@ -94,7 +94,7 @@ export const education = {
 export const skills = {
   data: [
     {
-      skill: "",
+      skill: "Lifting weights heavier than feels",
     },
   ],
   label: {

@@ -5,6 +5,8 @@ import HandleInputsComplex from "./HandleInputsComplex.jsx";
 import DisplayElement from "./DisplayElement.jsx";
 import DisplayInfo from "./DisplayInfo.jsx";
 import DisplayExperience from "./DisplayExperience.jsx";
+import DisplaySkills from "./DisplaySkills.jsx";
+import DisplayEducation from "./DisplayEducation.jsx";
 import * as dataset from "./Dataset.js";
 function App() {
   const [userInfo, userInfoUpdate] = useState(dataset.userInfo);
@@ -52,9 +54,9 @@ function App() {
       <div className="output">
         <DisplayInfo {...userInfo.data} />
         <DisplayElement input={summary.data} outputClass="summary" />
-        <div className="experience">
-          <DisplayExperience {...experience.data} />
-        </div>
+        <DisplayExperience {...experience.data} />
+        <DisplayEducation {...education.data} />
+        <DisplaySkills {...skills.data} />
       </div>
     </div>
   );
