@@ -1,18 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+$header-color: rgb(30, 38, 70);
+$input-color: rgb(225, 241, 253);
+$input-border-color: rgb(52, 61, 121);
+* {
+  font-family: roboto;
+}
+body {
+  padding: 0px;
+  margin: 0px;
+}
 .App {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  .output {
-    background-color: aquamarine;
-    .userInfo {
-      div {
-        display: grid;
-        grid-template-columns: 1fr 2fr;
+  border: 0px;
+  padding: 0px;
+  header {
+    font-size: 3rem;
+    padding: 0.5rem;
+    font-family: Roboto;
+    color: white;
+    background-color: $header-color;
+    text-align: center;
+    box-shadow: 0px 2px 10px 0px rgb(0, 0, 0);
+  }
+  .contentContainer {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    .output {
+      background-color: aquamarine;
+      .userInfo {
+        div {
+          display: grid;
+          grid-template-columns: 1fr 2fr;
+        }
       }
-    }
-    .experience {
-      .workplace {
-        display: grid;
-        grid-template-columns: 1fr 5fr;
+      .experience {
+        .workplace {
+          display: grid;
+          grid-template-columns: 1fr 5fr;
+        }
       }
     }
   }
@@ -21,9 +45,15 @@
 .inputCard {
   display: flex;
   flex-direction: column;
-  background-color: lightcyan;
+  background-color: $input-color;
   margin: 10px;
+  padding: 10px;
   border-style: solid;
+  border-color: $input-border-color;
+  border-radius: 5px;
+  h5 {
+    padding: 0.1rem;
+  }
   .row {
     display: grid;
     grid-template-columns: 1fr 3fr;

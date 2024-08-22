@@ -16,7 +16,7 @@ function HandleInputs({ input, update, labels, visible, type = "text" }) {
 
   return (
     <div className={`inputCard ${labels["objectName"]}`}>
-      <p onClick={handleVisible}>{labels["header"]}</p>
+      <h5 onClick={handleVisible}>{labels["header"]}</h5>
       {visible &&
         Object.keys(input).map((key) => (
           <div key={key} className="row">

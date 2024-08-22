@@ -16,47 +16,49 @@ function App() {
   const [skills, skillsUpdate] = useState(dataset.skills);
   return (
     <div className="App">
-      <div className="input">
-        <div>
-          <HandleInputs
-            input={userInfo.data}
-            update={userInfoUpdate}
-            labels={userInfo.label}
-            visible={userInfo.visible}
-          />
-          <HandleInputs
-            input={summary.data}
-            update={summaryUpdate}
-            labels={summary.label}
-            visible={summary.visible}
-          />
-          <HandleInputsComplex
-            input={experience.data}
-            update={experienceUpdate}
-            labels={experience.label}
-            visible={experience.visible}
-          />
-          <HandleInputsComplex
-            input={education.data}
-            update={educationUpdate}
-            labels={education.label}
-            visible={education.visible}
-          />
-
-          <HandleInputsComplex
-            input={skills.data}
-            update={skillsUpdate}
-            labels={skills.label}
-            visible={skills.visible}
-          />
+      <header>CV generator</header>
+      <div className="contentContainer">
+        <div className="input">
+          <div>
+            <HandleInputs
+              input={userInfo.data}
+              update={userInfoUpdate}
+              labels={userInfo.label}
+              visible={userInfo.visible}
+            />
+            <HandleInputs
+              input={summary.data}
+              update={summaryUpdate}
+              labels={summary.label}
+              visible={summary.visible}
+            />
+            <HandleInputsComplex
+              input={experience.data}
+              update={experienceUpdate}
+              labels={experience.label}
+              visible={experience.visible}
+            />
+            <HandleInputsComplex
+              input={education.data}
+              update={educationUpdate}
+              labels={education.label}
+              visible={education.visible}
+            />
+            <HandleInputsComplex
+              input={skills.data}
+              update={skillsUpdate}
+              labels={skills.label}
+              visible={skills.visible}
+            />
+          </div>
         </div>
-      </div>
-      <div className="output">
-        <DisplayInfo {...userInfo.data} />
-        <DisplayElement input={summary.data} outputClass="summary" />
-        <DisplayExperience {...experience.data} />
-        <DisplayEducation {...education.data} />
-        <DisplaySkills {...skills.data} />
+        <div className="output">
+          <DisplayInfo {...userInfo.data} />
+          <DisplayElement input={summary.data} outputClass="summary" />
+          <DisplayExperience {...experience.data} />
+          <DisplayEducation {...education.data} />
+          <DisplaySkills {...skills.data} />
+        </div>
       </div>
     </div>
   );

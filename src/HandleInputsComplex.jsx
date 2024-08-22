@@ -32,7 +32,7 @@ function HandleInputsComplex({
 
   return (
     <div className={`inputCard ${labels["objectName"]}`}>
-      <p onClick={handleVisible}>{labels["header"]}</p>
+      <h5 onClick={handleVisible}>{labels["header"]}</h5>
       {visible &&
         input.map((element, index) => (
           <div key={[element, index]}>
