@@ -2,12 +2,14 @@ import React, { useState } from "react";
 import "./App.scss";
 import HandleInputs from "./HandleInputs.jsx";
 import HandleInputsComplex from "./HandleInputsComplex.jsx";
+import HandleInputSummary from "./HandleInputSummary.jsx";
 import DisplayElement from "./DisplayElement.jsx";
 import DisplayInfo from "./DisplayInfo.jsx";
 import DisplayExperience from "./DisplayExperience.jsx";
 import DisplaySkills from "./DisplaySkills.jsx";
 import DisplayEducation from "./DisplayEducation.jsx";
 import * as dataset from "./Dataset.js";
+
 function App() {
   const [userInfo, userInfoUpdate] = useState(dataset.userInfo);
   const [summary, summaryUpdate] = useState(dataset.summary);
@@ -26,7 +28,7 @@ function App() {
               labels={userInfo.label}
               visible={userInfo.visible}
             />
-            <HandleInputs
+            <HandleInputSummary
               input={summary.data}
               update={summaryUpdate}
               labels={summary.label}

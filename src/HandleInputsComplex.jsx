@@ -35,8 +35,8 @@ function HandleInputsComplex({
       <h5 onClick={handleVisible}>{labels["header"]}</h5>
       {visible &&
         input.map((element, index) => (
-          <div key={[element, index]}>
-            <div key={index} className="workplace">
+          <div key={[element, index]} className="advancedContainer">
+            <div key={index} className="advanced">
               {Object.keys(element).map((key) => (
                 <div key={key}>
                   <div className="row">
@@ -50,11 +50,17 @@ function HandleInputsComplex({
                   </div>
                 </div>
               ))}
-              <button onClick={() => removeWorkplace(index)}>REMOVE</button>
             </div>
+            <button onClick={() => removeWorkplace(index)} className="remove">
+              X
+            </button>
           </div>
         ))}
-      {visible && <button onClick={addWorkplace}>ADD</button>}
+      {visible && (
+        <button onClick={addWorkplace} className="add">
+          +
+        </button>
+      )}
     </div>
   );
 }

@@ -19,7 +19,7 @@ export const userInfo = {
     github: "GitHub",
     linkedin: "LinkedIn",
   },
-  visible: true,
+  visible: false,
 };
 export const summary = {
   data: {
@@ -31,7 +31,7 @@ export const summary = {
     header: "Summary",
     summary: " ",
   },
-  visible: true,
+  visible: false,
 };
 export const experience = {
   data: [
@@ -63,7 +63,7 @@ export const experience = {
       duties: "",
     },
   },
-  visible: true,
+  visible: false,
 };
 export const education = {
   data: [
@@ -89,7 +89,7 @@ export const education = {
       duties: "",
     },
   },
-  visible: true,
+  visible: false,
 };
 export const skills = {
   data: [
@@ -105,5 +105,5 @@ export const skills = {
       skill: "",
     },
   },
-  visible: true,
+  visible: false,
 };
